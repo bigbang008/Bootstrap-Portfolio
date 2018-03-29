@@ -1,77 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>About me</title>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 </head>
+
 <style>
-    .ProfileImage {
-        width: 200px;
-        height: 200px;
+    body { 
+        padding-bottom: 70px;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAdCAYAAADVV140AAABtElEQVR42sWYWQ6EIBBEOY37ev/DOSkTEpKSPBmJfhBHpZtHNw3lhKZpjmVZjn3fb7V1XY+u6w7ZjeN4tG17tmma0n6nzwvf6hdtZK8+8ie/OHbq+zb4tm3noOrf970Gyj93cD3Xez1Tf9nlnheBU8c0spgJ9ZnnWb911T1FNs0E8DC4Zh9hdLVoAIDscMI8Xjl4ugT8PQMI2AG4pUsHwSF6kMLSxktS7Rm4Zq+IxSgMw3AngqUZkl/5T8d7DB7vVWgxGvr9BJZ8VgG36MT9V+/+jH6aRfkzP/XA3TgWYGYA3Hlkn479ArjvPA6Rn6ztGG+Cc9p5eX0EzoUmQCjoL8B5L5YtnAG1wD21Jce92/vSKTn2U3sAd0Fl9yWRBwFHQsvur8DzAseLSwqvJrj85Yr7kiuC67j1AmLpKiePwGXvkpcLX7zB1lJhSqMNgzt0fgly7QQZZWZKszcwA+f3kOV85sMDfVED/F/dA+BwtNcAZynA4CViqiI4f3cyOOuL+uCsewCcxf0r4Mzg4PCJ9gI4f9IZOKyvt8H5f52gNEBFfwDOO1sA/UFOXDkyuPpDsFjX/AAaVQm/PXemlQAAAABJRU5ErkJggg==); 
+        background-repeat: repeat; 
     }
+    .navbar-brand {
+        font-size: 30px;
+        background-color: #4aaaa5;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        margin-left: 16px;
+    }
+
+    .navigation {
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    }
+
+    .section {
+        background-color: white;
+    }
+    
+    h1, .text {
+        color:#4aaaa5;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        font-size: 25px;
+    }
+
+    p {
+        color: #777777;
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        text-indent: 3rem;
+    }
+
+    .footer {
+        border-top: 6px solid #4aaaa5;
+        margin-top: 50px;
+    }
+
 </style>
+
 <body>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Sarawut Mahnokhueng</a>
+            <div class="center-block" style="width:960px;">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" style="color:white; margin: 0;">Sarawut Mahnokhueng</a>
+                </div>
+            <!-- Navigation bar on the right -->
+                    <ul class="nav navbar-nav navbar-right navigation">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="portfolio.html">Profile</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
             </div>
-        <!-- Navigation bar on the right -->
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">About</a></li>
-                <li><a href="portfolio.html">Profile</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
         </div>
     </nav>
     
 <!-- Content -->
-    <div class="container">
+    <div class="container center-block" style="width:960px;" >
         <div class="row">
             <!-- Section -->
-            <div class="col-md-9">
-                <div class="page-header">
+            <div class="col-md-8 section">
+                <div class="page-header" style="margin-left:16px;">
                     <h1>About Me</h1>
                 </div>
-                
-                <hr> <!-- Add A Line -->
-                
+            
                 <div class="row">
                     <!-- Picture Porfile -->
-                    <div class="col-md-3">
-                        <img src="Images/Profile.jpg" alt="Profile Image" class="ProfileImage">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <img src="Images/Profile.jpg" alt="Profile Image" class="img-fluid img-responsive">
                     </div>
                     <!-- paragraph-->
-                    <div class="col-md-9">
+                    <div class="col-md-8 col-sm-8 col-xs-8">
                         <p>Hi, my name is Sarawut Mahnokhueng and I am currently pursuing full stack development at Northwestern Coding Boot Camp. I know my name does have a pretty unique name and is hard to pronouce it correctly; however, it is very typical where I come from. The way to pronounce is " &grave;s&epsilon;r&part;-wut  ma-no&upsilon;-khueng ". I have been in Chicago for 4 years and a half, but I originally from Thailand. By my culture, people call each other by their nickname. Then, you also call me by my nickname too which I go by Benz a.k.a. Ben. Feel to call me by any name. </p>
-                        <br>    
+                         
                         <p>I am a self-motivated, eager and adventurous individual who takes great pride in my ability to work in a team. Also, I am open-minded and capable of adapting quickly to change in order to meet common objectives. I love to travel especially natural adventure. My eyes are always wide open to the beautifully extraordinary nature of existence. The existence of life and how the breathtakingly fantastic view occurs, which is the natural selection. </p>
-                        <br>
+                        
                         <p>Every new person we meet is a new opportunity to learn. Approach everyone you meet with an open heart and mind and you're bound to make a great impression.</p>
                     </div>
 
                 </div>
+                <br>
             </div>
-            
+
             <!-- Aside -->
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="panel panel-default">
                   <div class="panel-heading">
-                    <h3 class="panel-title">Panel</h3>
+                    <h3 class="panel-title text-center text">Contect with Me</h3>
                   </div>
+                 
                   <div class="panel-body">
-                    Panel content
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                    <a href="#"><img class="img-responsive logo" src="Images/github.png" alt="github"></a>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                    <a href="#"><img class="img-responsive logo" src="Images/linkedIn.png" alt="linkedIn"></a>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                    <a href="#"><img class="img-responsive logo" src="Images/stackoverflow.png" alt="Stack Over Flow"></a> 
+                    </div>
                   </div>
                 </div>
             </div>
@@ -79,6 +124,11 @@
     </div>
 
 <!-- Footer -->
+<nav class="navbar navbar-default navbar-sticky-bottom footer">
+    <div class="container">
+        <p class="navbar-text navbar-right">An Adventure of A Lifetime --Copyright&copy;</p> 
+    </div>
+</nav>
 
 
 </body>
